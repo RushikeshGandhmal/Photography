@@ -188,7 +188,6 @@ nav {
 .burger,
 .menu-check {
   display: none;
-  display: block;
 }
 
 /* ABOUT SECTION */
@@ -208,6 +207,8 @@ nav {
   position: absolute;
   top: 20%;
   left: 50%;
+  letter-spacing: 2rem;
+  transform: translate(-50%, -20%);
 }
 
 .about-image img {
@@ -223,6 +224,21 @@ nav {
   justify-content: space-around;
 }
 
+.about-text div {
+  padding: 3rem 8rem;
+}
+
+.about-text h3 {
+  padding: 2rem 0rem;
+  font-family: "Ruhl Medium";
+}
+
+.about-text h2 {
+  padding: 4rem;
+  font-family: "Vibes";
+  letter-spacing: 0.5rem;
+}
+
 @media screen and (max-width: 842px) {
   .hero {
     width: 100%;
@@ -233,6 +249,7 @@ nav {
 
   /* BURGER THING */
   .burger {
+    display: block;
     position: relative;
   }
   .burger span {
@@ -285,5 +302,10 @@ nav {
   }
   .menu-check:checked ~ .burger span:nth-child(3) {
     transform: rotateZ(-45deg) translateY(-300%);
+  }
+
+  /* About Section */
+  .about-text div {
+    padding: 3rem 3rem;
   }
 }
