@@ -26,7 +26,7 @@ html {
   --header3: calc(3rem + 1vw);
   --header4: calc(2.4rem + 1vw);
   --text: calc(1.5rem + 1vw);
-  --big: calc(2.4rem + 1vw);
+  --big: calc(6rem + 1vw);
   --special-color: #906272;
   --background-color: #414141;
   --gray-text: #525252;
@@ -269,6 +269,43 @@ nav {
   text-align: center;
   padding: 5rem 10rem;
   transform: translate(-50%, -50%);
+}
+
+/* Contact Section */
+
+.contact {
+  min-height: 90vh;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.form-wrapper {
+  flex: 3 1 40rem;
+}
+
+.form-wrapper span {
+  font-size: var(--big);
+  color: var(--special-color);
+}
+
+.form-wrapper label {
+  display: block;
+}
+.form-wrapper input {
+  display: block;
+  margin: 3rem 0rem;
+  padding: 1rem;
+  background: var(--background-color);
+  color: white;
+  border: none;
+}
+.form-wrapper button {
+  padding: 1rem 8rem;
+  background: var(--special-color);
+}
+
+.contact img {
+  flex: 1 1 40rem;
 }
 
 @media screen and (max-width: 842px) {
